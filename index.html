@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="stylesss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">LOGO</a>
+      </div>
+	  <div class="searchBox"style="float:left;">
+
+            <input class="searchInput"type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="material-icons" style="font-color:red;font-size:20px;">
+                   🔍
+                </i>
+            </button>
+        </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+		<li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog </a></li>
+        <li><a href="#">Testimonials </a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+     <p style="color:#6e6767;text-align:center;font-size:24px;font-family: 'Space Mono', monospace;position: relative;margin-bottom:0px;">Hi folks, Welcome to Sctpl :)|</p>
+  </div>
+  </div>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  
+</head>
+
+<body>
+	<div class="main_box">
+		<div class="img img1">
+			<p class="pr"><b style="font-size:22px;">SOME TEXT</b></br>
+			Some placeholder text goes here.</p>
+		</div>
+
+		<div class="img img2">
+			<p class="pr"><b style="font-size:22px;">SOME TEXT</b></br>
+			Some placeholder text goes here.</p>
+		</div>
+
+		<div class="img img3">
+			<p class="pr"><b style="font-size:22px;">SOME TEXT</b></br>
+			Some placeholder text goes here.</p>
+		</div>
+
+		<div class="img img4">
+			<p class="pr"><b style="font-size:22px;">SOME TEXT</b></br>
+			Some placeholder text goes here.</p>
+		</div>
+		<div class="img img5">
+			<p class="pr"><b style="font-size:22px;">SOME TEXT</b></br>
+			Some placeholder text goes here.</p>
+		</div>
+		<div class="img img6">
+			<p class="pr"><b style="font-size:22px;">SOME TEXT</b></br>
+			Some placeholder text goes here.</p>
+		</div>
+	</div>
+  </div>
+  <div class="row">
+	<div class="column column-orange">
+     <p style="line-height:20px;">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum incognita est a printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic condimentum, remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis, recentius in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</p>	</div>
+	
+	<div class="column column-purple">
+	
+	<p style="line-height:20px;">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum incognita est a printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic condimentum, remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis, recentius in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</p>
+	
+	</div>
+	<div class="column column-pink">
+	<p style="line-height:20px;">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum incognita est a printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic condimentum, remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis, recentius in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</p>
+	</div>
+</div></br></br></br>
+<p style="color:#4f4d4d;padding:40px;line-height:30px;font-size:20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</br></br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<a href="#">
+<div class="post red">
+<div class="inner">
+<h2 class="title">A post about things and stuff</h2>
+<div class="post_info">
+<p class="date"><i style='font-size:24px' class='far'>&#128198;</i> Feb 25th,
+2017</p>
+</div>
+</div>
+</div>
+</a>
+<a href="#">
+<div class="post purple">
+<div class="inner">
+<h2 class="title">A post about things and stuff</h2>
+<div class="post_info">
+<p class="date"><i style='font-size:24px;font-color:#D597A5' class='far'>&#128198;</i> Feb 25th,
+2017</p>
+</div>
+</div>
+</div>
+</a>
+<div class="BQ">
+<div class="BQone">
+</br>
+<p style="margin-left:20px">"The U.S is approaching $19,000,000,000,000.00 in national debt.This is mathematically impossible to ever pay back...even every American was taxed at 100%."</br></br>
+-Charles Goyette,The Dollar Meltdown</p></br>
+</div></br>
+<div class="BQtwo">
+</br>
+<p style="margin-right:20px">"79 million Baby Boomers are about to retire,pull their money out of the economy,and demand their $35 Trillion Dollars in Social Security and Medicare.Think that through..."</br></br>
+Robert kiyosaki-</p></br>
+</div></br>
+<div class="BQthree">
+</br>
+<p style="margin-left:20px">"23.4% of Americans are Currently Unemployed...not the 9.1% they'd like you to believe."</br></br>
+-ShadowStats.com</p></br>
+</div>
+</div>
+<div class="BQp">
+<div class="BQone">
+</br>
+<p style="margin-left:20px">"The U.S is approaching $19,000,000,000,000.00 in national debt.This is mathematically impossible to ever pay back...even every American was taxed at 100%."</br></br>
+-Charles Goyette,The Dollar Meltdown</p></br>
+</div></br>
+<div class="BQtwo">
+</br>
+<p style="margin-right:20px">"79 million Baby Boomers are about to retire,pull their money out of the economy,and demand their $35 Trillion Dollars in Social Security and Medicare.Think that through..."</br></br>
+Robert kiyosaki-</p></br>
+</div></br>
+<div class="BQthree">
+</br>
+<p style="margin-left:20px">"23.4% of Americans are Currently Unemployed...not the 9.1% they'd like you to believe."</br></br>
+-ShadowStats.com</p></br>
+</div>
+</div>
+<a href="#">
+<div class="post green">
+<div class="inner">
+<h2 class="title">A post about things and stuff</h2>
+<div class="post_info">
+<p class="date"><i style='font-size:24px' class='far'>&#128198;</i> Feb 25th,
+2017</p>
+</div>
+</div>
+</div>
+</a>
+<a href="#">
+<div class="post purp">
+<div class="inner">
+<h2 class="title">A post about things and stuff</h2>
+<div class="post_info">
+<p class="date"><i style='font-size:24px' class='far'>&#128198;</i> Feb 25th,
+2017</p>
+</div>
+</div>
+</div>
+</a>
+<div class="BQ" style="float:left">
+<div class="BQone">
+</br>
+<p style="margin-left:20px">"The U.S is approaching $19,000,000,000,000.00 in national debt.This is mathematically impossible to ever pay back...even every American was taxed at 100%."</br></br>
+-Charles Goyette,The Dollar Meltdown</p></br>
+</div></br>
+<div class="BQtwo">
+</br>
+<p style="margin-right:20px">"79 million Baby Boomers are about to retire,pull their money out of the economy,and demand their $35 Trillion Dollars in Social Security and Medicare.Think that through..."</br></br>
+Robert kiyosaki-</p></br>
+</div></br>
+<div class="BQthree">
+</br>
+<p style="margin-left:20px">"23.4% of Americans are Currently Unemployed...not the 9.1% they'd like you to believe."</br></br>
+-ShadowStats.com</p></br>
+</div>
+</div>
+<div class="BQ" style="float:right;background-color:white">
+</div>
+<div class="columns"  style="margin-left:290px;">
+  <ul class="price">
+    <li class="header">Enterprise</li>
+    <li class="grey"style="width:90px;height:90px;margin-left:48px;padding-top:29px">$59</li>
+	<li><a href="#" class="button">Sign Up</a></li>
+    <li>10GB Disk Space</li>
+    <li>100GB Monthly Bandwidth</li>
+    <li>20 Email Accounts</li>
+    <li>Unlimited subdomains</li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Professional</li>
+    <li class="grey" style="width:90px;height:90px;margin-left:48px;padding-top:29px">$29</li>
+	<li><a href="#" class="button">Sign Up</a></li>
+    <li>5GB Disk Space</li>
+    <li>50GB Monthly Bandwidth</li>
+    <li>10 Email Accounts</li>
+    <li>Unlimited subdomains</li>
+  </ul>
+</div>
+
+<div class="columnss">
+  <ul class="price">
+    <li class="header">Standard</li>
+    <li class="grey"style="width:90px;height:90px;margin-left:48px;padding-top:29px">$17</li>
+	<li><a href="#" class="button">Sign Up</a></li>
+    <li>3GB Disk Space</li>
+    <li>25GB Monthly Bandwidth</li>
+    <li>5 Email Accounts</li>
+    <li>Unlimited subdomains</li>
+  </ul>
+</div>
+<div class="columnss">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey"style="width:90px;height:90px;margin-left:48px;padding-top:29px">$9</li>
+	<li><a href="#" class="button">Sign Up</a></li>
+    <li>1GB Disk Space</li>
+    <li>10GB Monthly Bandwidth</li>
+    <li>2 Email Accounts</li>
+    <li>5GB Unlimited subdomains</li>
+  </ul>
+</div>
+<div id="rapper">
+  <div class="image-container">
+    <img src="lemon.jpg"width="675px" />
+    <div class="image-caption">
+      <h1>if we could laugh</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  </div>
+</div>
+<footer style="background-color:#4d484a;margin-top:2499px;height:200px;margin-bottom:0;">
+    <div class="wrapper">
+      <div class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <span><i class="fab fa-facebook-f"></i></span>
+      </div>
+
+      <div class="icon twitter">
+        <div class="tooltip">Twitter</div>
+        <span><i class="fab fa-twitter"></i></span>
+      </div>
+      <div class="icon github">
+        <div class="tooltip">Github</div>
+        <span><i class="fab fa-github"></i></span>
+      </div>
+      <div class="icon instagram">
+        <div class="tooltip">Instagram</div>
+        <span><i class="fab fa-instagram"></i></span>
+      </div>
+
+      <div class="icon pinterest">
+        <div class="tooltip">Pinterest</div>
+        <span><i class="fab fa-pinterest"></i></span>
+      </div>
+    </div></br></br>
+	<p style="text-align:center;color:white;font-size:20px"><b>Copyright © 2019 .Suven Consultants and technology pvt ltd. All rights reserved</b></p>
+</footer>
+</body>
+</html>
